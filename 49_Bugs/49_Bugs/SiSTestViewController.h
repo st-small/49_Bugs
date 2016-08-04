@@ -8,6 +8,12 @@
 
 #import "ViewController.h"
 
-@interface SiSTestViewController : ViewController
+typedef void (^TestBlock)(void);
+
+@interface SiSTestViewController : UIViewController
+
+@property (copy, nonatomic) TestBlock block;
+
+- (void) testMethod;
 
 @end

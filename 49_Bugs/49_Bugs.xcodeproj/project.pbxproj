@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		523464621D51D8FD0015116A /* SiSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523464611D51D8FD0015116A /* SiSTestViewController.m */; };
+		523464641D51DA0F0015116A /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 523464631D51DA0F0015116A /* image.png */; };
 		52CEEA621D509CC50055322A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CEEA611D509CC50055322A /* main.m */; };
 		52CEEA651D509CC50055322A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CEEA641D509CC50055322A /* AppDelegate.m */; };
 		52CEEA681D509CC50055322A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CEEA671D509CC50055322A /* ViewController.m */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		523464601D51D8FD0015116A /* SiSTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiSTestViewController.h; sourceTree = "<group>"; };
+		523464611D51D8FD0015116A /* SiSTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiSTestViewController.m; sourceTree = "<group>"; };
+		523464631D51DA0F0015116A /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		52CEEA5D1D509CC50055322A /* 49_Bugs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 49_Bugs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CEEA611D509CC50055322A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52CEEA631D509CC50055322A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +110,8 @@
 				52CEEA641D509CC50055322A /* AppDelegate.m */,
 				52CEEA661D509CC50055322A /* ViewController.h */,
 				52CEEA671D509CC50055322A /* ViewController.m */,
+				523464601D51D8FD0015116A /* SiSTestViewController.h */,
+				523464611D51D8FD0015116A /* SiSTestViewController.m */,
 				52CEEA691D509CC50055322A /* Main.storyboard */,
 				52CEEA6C1D509CC50055322A /* Assets.xcassets */,
 				52CEEA6E1D509CC50055322A /* LaunchScreen.storyboard */,
@@ -117,6 +124,7 @@
 		52CEEA601D509CC50055322A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				523464631D51DA0F0015116A /* image.png */,
 				52CEEA611D509CC50055322A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -246,6 +254,7 @@
 				52CEEA701D509CC50055322A /* LaunchScreen.storyboard in Resources */,
 				52CEEA6D1D509CC50055322A /* Assets.xcassets in Resources */,
 				52CEEA6B1D509CC50055322A /* Main.storyboard in Resources */,
+				523464641D51DA0F0015116A /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523464621D51D8FD0015116A /* SiSTestViewController.m in Sources */,
 				52CEEA681D509CC50055322A /* ViewController.m in Sources */,
 				52CEEA651D509CC50055322A /* AppDelegate.m in Sources */,
 				52CEEA621D509CC50055322A /* main.m in Sources */,
@@ -498,6 +508,7 @@
 				52CEEA8C1D509CC50055322A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52CEEA8D1D509CC50055322A /* Build configuration list for PBXNativeTarget "49_BugsTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +517,7 @@
 				52CEEA8F1D509CC50055322A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52CEEA901D509CC50055322A /* Build configuration list for PBXNativeTarget "49_BugsUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +526,7 @@
 				52CEEA921D509CC50055322A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

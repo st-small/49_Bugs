@@ -16,22 +16,53 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    CGRect r = self.view.bounds;
+    r.origin = CGPointZero;
+    
+    UIImageView* imageView = [[UIImageView alloc] initWithFrame:r];
+    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    
+    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"image" ofType:@"png"];
+    
+    imageView.image = [UIImage imageWithContentsOfFile:filePath];
+    
+    [self.view addSubview:imageView];
+    
+    //[self testMethod];
+    
+    //CGMutablePathRef path = CGPathCreateMutable();
+    //CGPathAddEllipseInRect(path, &CGAffineTransformIdentity, CGRectZero);
+    //CGPathRelease(path);
+    
+    //__weak SiSTestViewController* weakSelf = self;
+    
+//    [[NSNotificationCenter defaultCenter] addObserverForName:@"TestNotification"
+//                                                      object:nil
+//                                                       queue:[NSOperationQueue mainQueue]
+//                                                  usingBlock:^(NSNotification * note) {
+//                                                      [self testMethod];
+//                                                  }];
+    
+//    [self testMethod];
+//    
+//    [self testMethod];
+//    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        NSLog(@"a");
+//    });
+//    
+//    NSLog(@"b");
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void) testMethod {
+    
+    NSLog(@"testMethod");
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) dealloc {
+    
+    NSLog(@"SiSTestViewController deallocated");
 }
-*/
 
 @end

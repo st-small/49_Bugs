@@ -59,9 +59,9 @@
     
     self.popover = nil;
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.shmelegate dismissPopoverAnimated:YES];
-    });
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self.shmelegate dismissPopoverAnimated:YES];
+//    });
 }
 
 @end
